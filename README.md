@@ -33,8 +33,27 @@ Docketer allows hosts to manage their scheduling links and update preferences us
 
 ### Ranking Algorithm
 
-__TODO__: Add description of cost function here
+Docketer uses three parameters to approximate user preferences: time of day, time of week, and interruption.
 
+__Time of day__ (_D_) can be understood as how preferred a time slot is relative to the user’s scheduling preferences in terms of morning, afternoon, or evening. Quantitatively, this is measured as the distance between the start of the meeting (_s_) and an optimal scheduling hour (_s_o_). The optimal scheduling hour can be understood as the time at which the user would schedule a meeting or task to start given they only have one meeting or task to complete that day.
+```
+D = | s - s_o |
+```
+
+__Time of week__ (_W_) can be understood as how preferred the time slot’s day of the week is. Quantitatively, this is measured as the distance between the time slot’s day of the week (_d_) and an optimal day of the week (_d_o_), which is the day a user would schedule an activity given they only have one activity to schedule in the week.
+
+```
+ W = (D_w + (d - d_o)) mod D_w
+ ```
+ `D_w = 7` is the number of days in a week.
+ 
+__Interruption__ (_I_) measures how much a given time slot breaks up an existing block of free time. Quantitatively, this will be measured as the minimum of the time between the end of the last event (_e_l_) and the start of the time slot (_s_), and the end of the time slot (_e_) and the beginning of the next meeting (_s_n_).
+
+```
+ I = min (s - e_l, s_n - e)
+```
+If there is no event before then _e_l_ is by default 9am, and if there is no event after then _s_n_ is by default 5pm.
+ 
 ## Frontend
 
 ### Setup
