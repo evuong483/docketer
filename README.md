@@ -1,5 +1,3 @@
-### docketer
-
 # Docketer
 __Sanitized Repository__
 
