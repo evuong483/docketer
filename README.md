@@ -17,7 +17,7 @@ __User Guides__:
 5. Testing
 6. Deploying to Heroku
 7. Directory Structure
-8. TODOs
+8. Future Work
 
 ## App Overview
 
@@ -410,3 +410,9 @@ __Notes for the diagram below__:
                 |
                 |-- ParameterControls.jsx              # Update preferences
 </pre>
+
+## Future Work
+- [ ] Perform usability tests with test users
+- [ ] Compare user experiences with another existing scheduling app to evaluate Docketer's approach
+- [ ] Perform user evaluation to optimize the preference cost function
+- [ ] Consider alternative approaches (i.e. instead of ranking and presenting one by one...)
