@@ -1,7 +1,7 @@
 #-----------------------------------------------------------------------------
 # troublesome_db_test.py
 # 
-# Test that was causing hanging
+# Test that was causing hanging when combined with db_tests
 #-----------------------------------------------------------------------------
 
 import sys

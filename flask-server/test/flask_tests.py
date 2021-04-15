@@ -1,7 +1,7 @@
 #-----------------------------------------------------------------------------
 # flask_tests.py
 # 
-# Tests for test-able paths
+# Tests for test-able paths in Flask (see README for untestable)
 #-----------------------------------------------------------------------------
 import sys
 sys.path.insert(0, '..')
