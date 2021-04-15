@@ -1,0 +1,63 @@
+.landing-page, .scheduling-page, .user-page {
+    min-height: calc(100vh - 161px);
+    margin: 0 auto;
+}
+
+.landing-page {
+    width: 60vw;
+    padding: 1in 0;
+}
+
+.scheduling-page {
+    width: fit-content;
+    padding: 1in 0;
+}
+
+.time-slot-button {
+    padding: 1em 3em;
+}
+
+.user-page {
+    width: fit-content;
+    padding: 2em 0;
+}
+
+.user-info {
+    margin-bottom: 3em;
+}
+
+.link-generator {
+    padding: 2em 3em !important;
+    margin-bottom: 3em;
+}
+
+.weekday-selector {
+    margin: 0 1em 0 1.5em;
+}
+
+.centered, .checked {
+    margin: auto;
+}
+
+.link-display {
+    background-color: white !important;
+}
+
+.link-label {
+    margin-top: 0.5em;
+}
+
+.info-icon{
+    margin-left: 0.5em;
+}
+
+.carousel-button {
+    border: none !important;
+    font-weight: bold !important;
+}
+
+.params-text {
+    width: 650px;
+    margin: auto;
+    max-width: fit-content;
+}

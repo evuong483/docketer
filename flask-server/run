@@ -1,0 +1,20 @@
+#-----------------------------------------------------------------------------
+# run 
+# Runs the testing app framework & suppresses output (writes to server.log)
+# 
+# Your virtual environment must be running for this to work!
+# Usage: ./run [port]
+# Visit localhost:[port] to see the app
+#-----------------------------------------------------------------------------
+PORT=3000
+
+if [[ $# != 1 ]]
+  then
+    echo "usage: ./run [port]"
+    exit 1
+fi
+
+# start the flask server
+rm server.log
+echo "Check server.log for server logs."
+python server.py $PORT 2>&1 > server.log

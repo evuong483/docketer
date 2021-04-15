@@ -1,0 +1,19 @@
+{
+  "files": {
+    "main.js": "/static/react/main.js",
+    "main.js.map": "/static/react/main.js.map",
+    "runtime-main.js": "/static/react/runtime-main.js",
+    "runtime-main.js.map": "/static/react/runtime-main.js.map",
+    "2.js": "/static/react/2.js",
+    "2.js.map": "/static/react/2.js.map",
+    "3.js": "/static/react/3.js",
+    "3.js.map": "/static/react/3.js.map",
+    "../../templates/index.html": "/static/react/../../templates/index.html",
+    "2.js.LICENSE.txt": "/static/react/2.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "runtime-main.js",
+    "2.js",
+    "main.js"
+  ]
+}
