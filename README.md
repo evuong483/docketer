@@ -53,6 +53,14 @@ __Interruption__ (_I_) measures how much a given time slot breaks up an existing
  I = min (s - e_l, s_n - e)
 ```
 If there is no event before then _e_l_ is by default 9am, and if there is no event after then _s_n_ is by default 5pm.
+
+Each time slot gets a priority (_P_) using the following equation:
+```
+ P = a * D + b * W + c * I
+ ```
+ where _a_, _b_, and _c_ are constants used to normalize the weight of the various parameters to approximately one.
+ 
+ Then, all the time slots are sorted in increasing order of priority using a basic sorting method. Slots with lower priorities are more preferred as they minimize the three parameters, and will be presented to guests first.
  
 ## Frontend
 
