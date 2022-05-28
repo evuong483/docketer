@@ -2,6 +2,7 @@
 __Sanitized Repository__
 
 Created by Erin Vuong for Junior IW (Spring 2021)
+See `full_report.pdf` for the full project writeup.
 
 Deployed at: [`https://docketer.herokuapp.com/`](https://docketer.herokuapp.com/)
 
